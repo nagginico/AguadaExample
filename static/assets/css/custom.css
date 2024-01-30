@@ -1,0 +1,62 @@
+/*
+Custom Css
+*/
+
+.row {
+  justify-content: space-around;
+}
+.coso {
+  text-align: center;
+  transition: transform 0.7s ease-in-out;
+  
+}
+.coso:hover{
+  transform: scale(1.05);
+}
+.coso a{
+  margin: 0px;
+  padding: 0px;
+}
+.card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 30px; padding: 10px; border-color: #a92a47;
+   
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 3px 6px #a92a47;
+  }
+  
+.card:hover {
+  transform: scale(1.05);
+} 
+/* Contenido de la card */
+
+  
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+  
+  
+  /* Botón de acción */
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.card li:hover {
+  background-color: #e0e0e0;
+}
+.card h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}

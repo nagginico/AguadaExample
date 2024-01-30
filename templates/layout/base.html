@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aguada SRL - {% block title %} {% endblock %} </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Cmabiar el icono de la pagina (tratar de pedirle a ale un logo de decente para ponerle)-->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/logo/paginaLoco.jpg' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="{%  static 'assets/css/fontawesome.min.css' %}">
+</head>
+<body>
+    <!--Para tener codigo mas legible-->
+    {% include 'layout/barsup.html' %}
+    {% block content %}
+    
+    {% endblock %}
+    <!-- Start Footer -->
+    {% include 'layout/footer.html' %}
+    <!-- End Footer -->
+    <!-- Start Script Include -->
+    {% include 'layout/scripts.html' %}
+    <!-- End Script Include-->
+</body>
+
+</html>

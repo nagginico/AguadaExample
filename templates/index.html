@@ -1,0 +1,84 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+    <!-- Start Banner Hero -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide " data-bs-ride="carousel">
+        <ol class="carousel-indicators" style="margin-top: 0px;">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5 ">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last" style="padding-bottom: 40px;">
+                            <img class="img-fluid " style="border-radius: 100px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));" src="{% static "assets/img/pics/tanques.jpg" %}" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-success"><b>Aguada</b> SRL</h1>
+                                <h3 class="h2">Brindamos soluciones para el consumo mayorista de combustibles y lubricantes.</h3>
+                                <h4 class="h2 text-success"><strong>AXION</strong><p>energy</p></h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last" style="padding-bottom: 40px;">
+                            <img class="img-fluid " style="border-radius: 100px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));" src="{% static "assets/img/pics/tanquegrosso.jpg" %}" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1 text-success"> ¿Necesita transporte?</h1>
+                                <h3 class="h2">Contamos camiones propios</h3>
+                                <p>
+                                Entrega en punto de demanda o retirando en nuestros depósitos, con cisterna cerrada de +4.000 litros con caudalímetro.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last" style="padding-bottom: 40px;">
+                            <img class="img-fluid" style="border-radius: 100px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));" src="{% static 'assets/img/pics/tanque.jpg' %}" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1 text-success">Mas de 20 años de Excelencia en el rubro</h1>
+                                <h3 class="h2">Construyendo Legados a Través del Tiempo</h3>
+                                <p>
+                                    Nos esforzamos continuamente por <strong> innovar y superar las expectativas</strong>, 
+                                    asegurando que cada interacción sea una experiencia que inspire confianza y satisfacción. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+     <!-- Start Products -->
+     {% include 'layout/productos.html' %}
+     <!-- End Products -->
+ 
+ 
+     <!-- Start Service -->
+     {% include 'layout/servicio.html' %}
+     <!-- End Service -->
+ 
+{% endblock %}
