@@ -60,3 +60,64 @@ Custom Css
   font-size: 1.5em;
   margin-bottom: 15px;
 }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center; /* Centrar el texto en los encabezados */
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 600px) {
+  .table {
+      width: 100%;
+  }
+}
+.descripcion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.descripcion li {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
+
+.descripcion li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  .descripcion {
+      width: 100%;
+  }
+}
