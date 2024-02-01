@@ -1,0 +1,78 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}Diesel X10{% endblock %}
+{% block content %}
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Open Content -->
+    <section class="bg-light">
+        <div class="container pb-5">
+            <div class="row">
+
+                <!-- col end -->
+                <div class="col-lg-7 mt-5">
+                    <div class="" style="text-align: center; margin: auto;">
+                        <div class="card-body">
+
+                            <h1 class="h2 text-success"><strong>Diesel X10</strong></h1>
+                            <p class="h3 py-2"></p>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Axion Energy</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Ficha tecnica:</h6>
+                            <p>Es un Diesel con ultra bajo contenido en Azufre.</p>
+                            <div class="descripcion" style="margin-bottom: 15px;">
+                                <ul>
+                                    <li>Compatible con Euro V apto para todo tipo de vehiculo diesel.</li>
+                                    <li>Extiende la vida útil del motor hasta un 40%: protege las partes vitales del
+                                        motor contra el desgaste.</li>
+                                    <li>Disminuye las emisiones contaminantes en los vehículos.</li>
+                                    <li>Número de cetano al nivel de los Premium Diésel del mercado. </li>
+                                    <li>Contiene un paquete de aditivos que limpia y mantiene limpias las partes vitales
+                                        del motor. </li>
+                                    <li>Control de calidad garantizado.</li>
+                                </ul>
+                            </div>
+                            <form action="" method="GET">
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <a href="https://wa.me/3435079121?text=Me%20interesa%20una%20cotizacion." download="" class="btn btn-success btn-lg">Pedir cotizacion</a>
+                                    </div>
+                                    <div class="col d-grid">
+                                        <a href="{% static 'assets/fichatecnica/axion-diesel Agro.pdf '%}" download="" class="btn btn-success btn-lg">Ficha Técnica</a>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+ {% endblock %}

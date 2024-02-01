@@ -9,5 +9,7 @@ def cotizacion(request):
     return render(request, 'contact.html', {})
 def servicios(request):
     return render(request,'shop.html', {})
-def producto(request):
-    return render(request, 'shop-single.html', {})
+def productoD(request):
+    return render(request, 'dieselinfo.html', {})
+def productoQ(request):
+    return render(request, 'quantiuminfo.html', {})
