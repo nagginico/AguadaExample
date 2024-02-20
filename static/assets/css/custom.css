@@ -100,3 +100,81 @@ Custom Css
 .Vermas a:hover {
   color: #0056b3;
 }
+
+.cardTransition {
+  font-size: 24px;
+  transition: font-size 0.2s;
+}
+.cardTransition:hover{
+  font-size: 28px;
+}
+.enlace-cotizacion {
+  background-color: #007bff; /* Azul eléctrico */
+  color: #ffffff; /* Blanco */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #0056b3; /* Un azul un poco más oscuro para el borde */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.enlace-cotizacion:hover {
+  background-color: #0056b3; /* Un azul un poco más oscuro para el hover */
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15); /* Sombra más pronunciada */
+  transform: translateY(-2px); /* Efecto de levantamiento */
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite a las tarjetas ajustarse y envolverse según el ancho de la pantalla */
+  justify-content: space-around;
+  gap: 20px; /* Espaciado entre tarjetas */
+  margin: 20px;
+}
+
+.product-card {
+  width: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+  max-width: 400px; /* Máximo ancho de la tarjeta para evitar que sea demasiado grande */
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card img {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  height: 200px; /* Altura fija para la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+}
+
+.product-card .card-content {
+  padding: 15px; /* Espaciado interno para el contenido de la tarjeta */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+  color: #a92a47;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.product-card p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) { /* Tablets y pantallas más grandes */
+  .product-card {
+    width: 45%; /* Ajuste para que quepan dos tarjetas en una fila */
+  }
+}
+@media (min-width: 1024px) { /* Desktops y pantallas más grandes */
+  .product-card {
+    width: 30%; /* Ajuste para que quepan tres tarjetas en una fila, dependiendo del espacio disponible */
+  }
+}

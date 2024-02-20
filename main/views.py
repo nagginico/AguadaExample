@@ -7,9 +7,11 @@ def about(request):
     return render(request, 'about.html', {})
 def cotizacion(request):
     return render(request, 'contact.html', {})
-def servicios(request):
-    return render(request,'shop.html', {})
+def combustible(request):
+    return render(request,'productos/combustible.html', {})
 def productoD(request):
     return render(request, 'dieselinfo.html', {})
 def productoQ(request):
     return render(request, 'quantiuminfo.html', {})
+def lubricantes(request):
+    return render(request, 'productos/lubricantes.html', {})

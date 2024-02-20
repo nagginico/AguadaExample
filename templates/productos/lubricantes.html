@@ -1,0 +1,73 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}Castrol Edge{% endblock %}
+{% block content %} 
+<section class="container py-5" style = 'align-items: center;'>
+    <div class="row text-center pt-3" style="padding-bottom: 60px ;">
+        <div class="col-lg-6 m-auto" >
+            <h1 class="h1 text-success"><strong  style="color: #59ab6e;">Lubricantes</strong></h1>
+            <p>
+                Descubre la gama más completa de lubricantes de alta calidad, diseñados para garantizar el máximo rendimiento y protección de tus equipos y vehículos. 
+                Con opciones personalizadas para satisfacer todas tus necesidades, estamos aquí para ofrecerte los mejores productos. Mas info de los lubricantes en <a href="https://www.castrol.com/es_ar/argentina/home.html">Castrol</a>.
+            </p>
+        </div>
+    </div>
+    
+    <div class="row text-center pt-3" style="padding-bottom: 60px ;">
+        <div class="col-lg-6 m-auto" >
+            <p>
+                ¿Listo para llevar la eficiencia de tu maquinaria al siguiente nivel? <br>  
+            </p>
+            <a href="https://wa.me/3435079121?text=Hola,%20me%20interesa%20una%20cotizacion%20de%20lubricantes" class="enlace-cotizacion">Solicitar Cotización 📲</a> 
+        </div>
+    </div>
+</section>
+<section class="bg-light py-5">
+    <div class="container my-4">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Trabajamos con las mejores marcas</h1>
+                <p>
+                    
+                </p>
+            </div>
+            <div class="col-lg-9 m-auto tempaltemo-carousel">
+                <div class="row d-flex flex-row">
+                   
+                    <!--End Controls-->
+
+                    <!--Carousel Wrapper-->
+                    <div class="col">
+                        <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="templatemo-slide-brand" data-bs-ride="carousel">
+                            <!--Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <!--Third slide-->
+                                <div class="carousel-item active">
+                                    <div class="row" style="align-items: center;">
+                                        <div class="col-3 p-md-5" >
+                                            <a href="#"><img class="img-fluid brand-img" style="object-fit: cover; width: 100%; height: auto; max-width: 300px; max-height: 300px; " src="{% static 'assets/img/logo/Axion.png' %}" alt="Brand Logo"></a>
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <a href="#"><img class="img-fluid brand-img" style="object-fit: cover; width: 100%; height: auto; max-width: 70px; " src="{% static 'assets/img/logo/Castrol.png' %}" alt="Brand Logo"></a>
+                                        </div>
+                                        <div class="col-3 p-md-5" >
+                                            <a href="#"><img class="img-fluid brand-img" style="object-fit: cover; width: 100%; height: auto; max-width: 300px; max-height: 300px; " src="{% static 'assets/img/logo/Axion.png' %}" alt="Brand Logo"></a>
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <a href="#"><img class="img-fluid brand-img" style="object-fit: cover; width: 100%; height: auto; max-width: 70px; " src="{% static 'assets/img/logo/Castrol.png' %}" alt="Brand Logo"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Third slide-->
+
+                            </div>
+                            <!--End Slides-->
+                        </div>
+                    </div>
+                    <!--End Carousel Wrapper-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

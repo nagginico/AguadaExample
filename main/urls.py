@@ -8,5 +8,6 @@ urlpatterns = [
     path('about/', views.about, name = 'sobre'),
     path('productos/quantium', views.productoQ, name = 'productoQ'),
     path('productos/dieselx10', views.productoD, name = 'productoD'),
-    path('productos/', views.servicios, name = 'productos'),
+    path('productos/combustible', views.combustible, name = 'combustible'),
+    path('productos/lubricantes', views.lubricantes, name = 'lubricantes'),
 ]

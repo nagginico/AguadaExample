@@ -1,0 +1,81 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}Productos{% endblock %}
+{% block content %}
+
+
+
+    <!-- Start Content -->
+    <div class="card-container">
+        <a href="{% url 'productoD' %}" class="product-card">
+          <img src="{% static 'assets/img/productos/dieselcarga.png'%}" alt="Diesel x10">
+          <div class="card-content">
+            <h3 style="text-align: center;">Diesel x10</h3>
+            <p>Eficiencia y rendimiento elevados para tu motor. Con tecnología avanzada, reduce fricción y desgaste, optimizando cada viaje.</p>
+          </div>
+        </a>
+      
+        <a href="{% url 'productoQ' %}" class="product-card">
+          <img src="{% static "assets/img/productos/quantiumcarga.png" %}" alt="Quantium Diesel x10">
+          <div class="card-content">
+            <h3>Quantium Diesel x10</h3>
+            <p>Rendimiento excepcional con cuidado avanzado para tu motor. Combustible eco-eficiente que limpia y protege</p>
+          </div>
+        </a>
+      </div>
+      
+    <!-- End Content -->
+
+    <!-- Start Brands -->
+    <section class="bg-light py-5">
+        <div class="container my-4">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Trabajamos con las mejores marcas</h1>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="col-lg-9 m-auto tempaltemo-carousel">
+                    <div class="row d-flex flex-row">
+                       
+                        <!--End Controls-->
+
+                        <!--Carousel Wrapper-->
+                        <div class="col">
+                            <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="templatemo-slide-brand" data-bs-ride="carousel">
+                                <!--Slides-->
+                                <div class="carousel-inner product-links-wap" role="listbox">
+                                    <!--Third slide-->
+                                    <div class="carousel-item active">
+                                        <div class="row" style="align-items: center;">
+                                            <div class="col-3 p-md-5" >
+                                                <a href="#"><img class="img-fluid brand-img" style="object-fit: cover; width: 100%; height: auto; max-width: 300px; max-height: 300px; " src="{% static 'assets/img/logo/Axion.png' %}" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" style="object-fit: cover; width: 100%; height: auto; max-width: 70px; " src="{% static 'assets/img/logo/Castrol.png' %}" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5" >
+                                                <a href="#"><img class="img-fluid brand-img" style="object-fit: cover; width: 100%; height: auto; max-width: 300px; max-height: 300px; " src="{% static 'assets/img/logo/Axion.png' %}" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" style="object-fit: cover; width: 100%; height: auto; max-width: 70px; " src="{% static 'assets/img/logo/Castrol.png' %}" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Third slide-->
+
+                                </div>
+                                <!--End Slides-->
+                            </div>
+                        </div>
+                        <!--End Carousel Wrapper-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Brands-->
+
+
+{% endblock  %}
